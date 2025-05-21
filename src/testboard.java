@@ -9,6 +9,8 @@ public class testboard {
         sb.append("Hello, ");
         sb.append("world!");
 
+        String str = "hello";
+
         // 문자열 출력
         System.out.println(sb.toString()); // 출력: Hello, world!
 

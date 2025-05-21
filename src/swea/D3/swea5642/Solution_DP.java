@@ -18,6 +18,7 @@ public class Solution_DP { // 1차원 dp 배열 이용해서 풀린 코드
             StringTokenizer st = new StringTokenizer(br.readLine());
             for (int i = 0; i < N; i++) {
                 arr[i] = Integer.parseInt(st.nextToken());
+                // 1 3 -8 18 -8
             }
 
             // DP 배열 생성 및 초기화
@@ -27,6 +28,8 @@ public class Solution_DP { // 1차원 dp 배열 이용해서 풀린 코드
 
             for (int i = 1; i < N; i++) {
                 dp[i] = Math.max(arr[i], dp[i - 1] + arr[i]);
+                // Math.max(3, 0+1) = 3
+                // Math.max(-8,
                 max = Math.max(max, dp[i]);
             }
 
